@@ -25,7 +25,7 @@ npm run build
 [vue-axios|axios中文网](http://axios-js.com/zh-cn/docs/vue-axios.html)  
 [nodejs express搭建服务器](https://blog.csdn.net/qq_37790252/article/details/99290881)  
 [巧用滤镜实现高级感拉满的文字快闪切换效果](https://github.com/chokcoco/iCSS/issues/149)  
-[西安地铁官网](https://www.xianrail.com/#/index)
+[西安地铁官网](https://www.xianrail.com/#/index)  
 [把HTML告诉你的服务器cheerio](https://github.com/cheeriojs/cheerio/wiki/Chinese-README)  
 [http-proxy-middleware项目](https://github.com/chimurai/http-proxy-middleware)  
 [http-proxy-middleware使用方法和实现原理（源码解读)](https://www.cnblogs.com/zhaoweikai/p/9969282.html)  
