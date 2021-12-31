@@ -1,31 +1,26 @@
-# version2.0
+# 基于vue-cli的南昌地铁网站搭建
+![图片](index.png)
 
-## Project setup
+![图片](tour.png)
+
+## 从github下载项目后，执行下面的命令导入依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行命令
 ```
 npm run serve
-*```
+```
 
-### Compiles and minifies for production
+### 打包命令
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-
-参考链接：
+参考链接：  
 https://www.zhangxinxu.com/wordpress/2014/12/css3-svg-clip-path/
 http://axios-js.com/zh-cn/docs/vue-axios.html
 https://blog.csdn.net/qq_37790252/article/details/99290881
