@@ -5,7 +5,7 @@
         <!-- 地铁背景 -->
         <section class="main-section section-subculture">
           <div class="main-section-box" style="height: 400px">
-            <img src="/subculture.png" alt="地铁背景" />
+            <img :src="subCulture" alt="地铁背景" />
           </div>
         </section>
         <!-- 地铁视频 -->
@@ -56,6 +56,11 @@ import SubDiary from "@/components/SubDiary.vue";
 
 export default {
   name: "SubwayCulture",
+  data() {
+    return {
+      subCulture:require("../assets/subculture.png"),
+    }
+  },
   components: {
     SubStyle,
     SubDiary,

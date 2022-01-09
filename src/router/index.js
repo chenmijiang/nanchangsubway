@@ -11,29 +11,29 @@ const routes = [{
   },
   {
     path: '/newsCenter',
-    component: () => import( /* webpackChunkName: "about" */ '../views/NewsCenter.vue'),
+    component: () => import( /* webpackChunkName: "subway" */ '../views/NewsCenter.vue'),
     children: [{
       path: 'category/:category/total/:total/page/:page',
-      component: () => import( /* webpackChunkName: "about" */ '../components/SubNewsShow.vue'),
+      component: () => import( /* webpackChunkName: "subway" */ '../components/SubNewsShow.vue'),
     }, {
       path: 'poem/:poem',
-      component: () => import( /* webpackChunkName: "about" */ '../components/SubPoem.vue'),
+      component: () => import( /* webpackChunkName: "subway" */ '../components/SubPoem.vue'),
     }]
   },
   {
     path: '/passengerService',
     name: 'PassengerService',
-    component: () => import( /* webpackChunkName: "about" */ '../views/PassengerService.vue')
+    component: () => import( /* webpackChunkName: "subway" */ '../views/PassengerService.vue')
   },
   {
     path: '/subwayCulture',
     name: 'SubwayCulture',
-    component: () => import( /* webpackChunkName: "about" */ '../views/SubwayCulture.vue')
+    component: () => import( /* webpackChunkName: "subway" */ '../views/SubwayCulture.vue')
   },
   {
     path: '/subwayTour',
     name: 'SubwayTour',
-    component: () => import( /* webpackChunkName: "about" */ '../views/SubwayTour.vue')
+    component: () => import( /* webpackChunkName: "subway" */ '../views/SubwayTour.vue')
   }
 ]
 

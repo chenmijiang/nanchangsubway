@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div class="logo">
-        <img src="/南昌地铁.png" alt="南昌地铁" srcset="" />
+        <img src="./assets/南昌地铁.png" alt="南昌地铁" srcset="" />
       </div>
       <div id="nav">
         <span
@@ -19,7 +19,7 @@
     <footer>
       <section class="gf-footer">
         <div class="gf-footer-left">
-          <img src="/南昌地铁2.png" alt="南昌地铁" />
+          <img src="./assets/南昌地铁2.png" alt="南昌地铁" />
         </div>
         <div class="gf-footer-right">
           <div class="gf-footer-detail">

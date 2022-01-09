@@ -2,7 +2,7 @@
   <div class="section-box-subaround">
     <el-carousel
       indicator-position="outside"
-      height="400px"
+      height="16rem"
       :autoplay="autoplay"
     >
       <el-carousel-item v-for="thing in things" :key="thing.title">
@@ -82,11 +82,14 @@ $baseColor: #e50039;
   color: #fff;
   background-color: $baseColor;
   border-radius: 10px !important;
+
+  display: flex;
+  gap: 3rem;
+
   .left-img {
-    width: 400px;
-    height: 300px;
-    display: inline-block;
-    transform: translate(50px, -50px);
+    width: 16rem;
+    height: 12rem;
+    transform: translate(1.5rem, -1.5rem);
     img {
       width: 100%;
       height: 100%;
@@ -96,17 +99,17 @@ $baseColor: #e50039;
   }
 
   .right-detail {
-    width: 500px;
+    width: 20rem;
     float: right;
-    height: 300px;
-    padding: 10px;
+    height: 12rem;
+    padding: 0.5rem;
     font-size: 0.7rem;
 
     .detail-title {
       text-align: center;
       font-weight: bold;
       font-size: 1rem;
-      margin-bottom: 10px;
+      margin-bottom: 0.3rem;
     }
   }
 }

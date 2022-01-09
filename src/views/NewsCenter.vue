@@ -51,11 +51,11 @@ export default {
     return {
       num: 0,
       urls: [
-        "/newcenter4.png",
-        "/newcenter3.png",
-        "/newcenter1.png",
-        "/newcenter2.png",
-        "/newcenter5.png",
+        require("../assets/newcenter4.png"),
+        require("../assets/newcenter3.png"),
+        require("../assets/newcenter1.png"),
+        require("../assets/newcenter2.png"),
+        require("../assets/newcenter5.png"),
       ],
       menus: [
         {

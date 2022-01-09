@@ -6,8 +6,12 @@
         <section class="main-section section-subserve">
           <div class="main-section-box" style="height: 400px">
             <div class="subtour-bg">
-              <img src="/subserve.png" alt="地铁背景" />
-              <img src="/subserve1.png" alt="地铁背景" />
+              <img
+                :src="bg"
+                alt="地铁背景"
+                v-for="(bg, index) in subtourBg"
+                :key="index"
+              />
             </div>
           </div>
         </section>
@@ -28,7 +32,7 @@
           <!-- 原计划采用canvans绘制交互式地铁路线图，因时间关系改为图片 -->
           <div class="main-section-box">
             <div class="section-box-submap">
-              <img src="/submap.png" alt="地铁图片" class="submap-img" />
+              <img :src="subMap" alt="地铁图片" class="submap-img" />
             </div>
           </div>
         </section>
@@ -42,6 +46,15 @@ import SubRunTime from "@/components/SubRunTime.vue";
 
 export default {
   name: "PassengerService",
+  data() {
+    return {
+      subtourBg: [
+        require("../assets/subserve.png"),
+        require("../assets/subserve1.png"),
+      ],
+      subMap: require("../assets/submap.png"),
+    };
+  },
   components: {
     SubRunTime,
   },
@@ -50,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 $radius: 5px;
-$baseColor:#e50039;
+$baseColor: #e50039;
 
 .main-section {
   min-height: 100px;

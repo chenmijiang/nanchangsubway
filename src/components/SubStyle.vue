@@ -17,13 +17,13 @@ export default {
   data: function () {
     return {
       urls: [
-        "/style1.png",
-        "/style2.png",
-        "/style3.png",
-        "/style4.png",
-        "/style5.png",
-        "/style6.png",
-        "/style7.png",
+        require("../assets/style1.png"),
+        require("../assets/style2.png"),
+        require("../assets/style3.png"),
+        require("../assets/style4.png"),
+        require("../assets/style5.png"),
+        require("../assets/style6.png"),
+        require("../assets/style7.png"),
       ],
     };
   },

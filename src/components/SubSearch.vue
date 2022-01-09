@@ -16,22 +16,22 @@ export default {
     return {
       subsearch: [
         {
-          img: "mask-image:url(/luxian.png)",
+          img: "mask-image:url(" + require("../assets/luxian.png") + ")",
           link: "/passengerService",
           content: "运行路线",
         },
         {
-          img: "mask-image:url(/shijian.png)",
+          img: "mask-image:url(" + require("../assets/shijian.png") + ")",
           link: "/passengerService",
           content: "运营时间",
         },
         {
-          img: "mask-image:url(/jingdian.png)",
+          img: "mask-image:url(" + require("../assets/jingdian.png") + ")",
           link: "/subwayTour",
           content: "周边景点",
         },
         {
-          img: "mask-image:url(/zixun.png)",
+          img: "mask-image:url(" + require("../assets/zixun.png") + ")",
           link: "/",
           content: "咨询交流",
         },
