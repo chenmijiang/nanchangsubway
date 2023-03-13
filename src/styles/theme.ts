@@ -1,7 +1,9 @@
+/** @format */
+
 const theme = {
   colors: {
-    primary: '#e50039',
-  },
+    primary: '#e50039'
+  }
 }
 
 export default theme

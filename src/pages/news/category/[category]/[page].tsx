@@ -1,3 +1,5 @@
+/** @format */
+
 const News = () => {
   return (
     <main>

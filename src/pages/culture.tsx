@@ -1,3 +1,5 @@
+/** @format */
+
 const Culture = () => {
   return (
     <main>
