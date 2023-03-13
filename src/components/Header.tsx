@@ -1,18 +1,20 @@
 /** @format */
 
-import Link, { LinkProps } from 'next/link'
-import Image, { ImageProps } from 'next/image'
-import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { useDispatch, useSelector as useReduxSelector } from 'react-redux'
 import styled from 'styled-components'
 
 import logo_image from '@/assets/南昌地铁.png'
 import { nav_links } from '@/configs/default'
+import { setRouteIndex } from '@/store/switchRouter.slice'
 
 const Header = () => {
-  const [linkActive, setLinkActive] = useState(0)
+  const currentRouteIndex = useReduxSelector((state: any) => state.switchRouter.currentRouteIndex)
+  const dispatch = useDispatch()
   const handlerLinkClick = (index: number) => {
     return () => {
-      setLinkActive(index)
+      dispatch(setRouteIndex(index))
     }
   }
   return (
@@ -27,7 +29,7 @@ const Header = () => {
             <li key={index}>
               <Link
                 href={item.link}
-                className={linkActive === index ? 'active' : ''}
+                className={currentRouteIndex === index ? 'active' : ''}
                 onClick={handlerLinkClick(index)}>
                 {item.detail}
               </Link>
@@ -73,3 +75,6 @@ const GlobalHeader = styled.header`
 `
 
 export default Header
+function useSelector() {
+  throw new Error('Function not implemented.')
+}
